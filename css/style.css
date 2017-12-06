@@ -6,28 +6,45 @@ header img {
     width: 100%
 }
 
-.mainContent {
-   margin-left: 5%;
+header {
+    min-height: 300px;    
+    padding-left: 20px;
+    padding-top: 75px;
+    background-image: url("../img/header-jetBlack.jpg");
+}
+header h1 {
+    color: goldenrod;
+}
+
+.navContent{
+    margin-left: 5%;
     margin-right: 5%;
 }
-
-
-article {    
-    clear: both;       
+.mainContent {    
+    background-color: whitesmoke;   
+    margin-top: -20px;
+    margin-left: 5%;
+    margin-right: 5%;       
+    overflow: hidden;
 }
-article div {
+
+article {       
+   overflow: hidden; 
+}
+article div {    
+    background-color: none;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;    
 }
 article .leftContent {
     width: 30%;
     float: left;
+    padding: 10px;
+    
 }
 article .rightContent {    
     width: 70%;
-    float: right;
-    background-color: white;
-    
+    float: right;         
 }
 article .leftContent img {
     width: 100%;
@@ -37,10 +54,9 @@ p {
     padding: 20px;
 }
 
-footer {
+footer {    
     margin-bottom: -20px;
-    background-color: #080808;
-    clear: both;    
+    background-color: #080808;    
     min-height: 50px;    
 }
 footer p {
