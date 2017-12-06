@@ -1,0 +1,50 @@
+body {
+   background-color: #999999;
+}
+
+header img {
+    width: 100%
+}
+
+.mainContent {
+   margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+article {    
+    clear: both;       
+}
+article div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+article .leftContent {
+    width: 30%;
+    float: left;
+}
+article .rightContent {    
+    width: 70%;
+    float: right;
+    background-color: white;
+    
+}
+article .leftContent img {
+    width: 100%;
+}
+
+p {
+    padding: 20px;
+}
+
+footer {
+    margin-bottom: -20px;
+    background-color: #080808;
+    clear: both;    
+    min-height: 50px;    
+}
+footer p {
+    text-align: center;   
+    color: #999999 
+}
+
