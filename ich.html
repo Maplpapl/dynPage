@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Über mich</title>
-    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" >
-    <link rel="stylesheet" href="./css/site.css" >
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" >
+    <link rel="stylesheet" href="./css/style.css" >
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery-3.2.1.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/javascript.js"></script>
 
+    <title>dynPage</title>
 
   </head>
 
-  <header>
-    <div>
-      <img src="./img/header.jpg" />
-    </div>
-  </header>
-
   <body>
+    <header>
+      <div>
+        <img src="./img/header-jetBlack.jpg" />
+      </div>
+    </header>
     <div id="dynNav"></div>
 
-    <div>Bla</div>
+    <div class="mainContent">
+      <article>
+        <div id="content"></div>
+      </article>
+    </div>
 
     <script>
       $(document).ready(function(){
         $( "#dynNav" ).load( "./navigation.html" );
       });
+      $(document).ready(begruessung());
+      $(document).ready(potenz());
     </script>
 
   </body>
