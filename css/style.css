@@ -30,28 +30,31 @@ header h1 {
 
 article {       
    overflow: hidden; 
+   display: flex;   
+   flex-wrap: wrap;
 }
 article div {    
     background-color: none;
     margin-top: 5px;
     margin-bottom: 5px;    
 }
+
 article .leftContent {
     width: 30%;
-    float: left;
+    min-width: 300px;
+    /*float: left;*/
     padding: 10px;
-    
 }
 article .rightContent {    
     width: 70%;
-    float: right;         
+    /*float: right;*/         
 }
 article .leftContent img {
     width: 100%;
 }
 
 p {
-    padding: 20px;
+    padding: 10px;
 }
 
 footer {    
@@ -62,5 +65,17 @@ footer {
 footer p {
     text-align: center;   
     color: #999999 
+}
+
+@media screen and (max-width:1200px) {
+    article {
+        flex-direction: column;
+    }
+    article .leftContent { 
+        padding-left: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+    }        
 }
 
